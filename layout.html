@@ -59,13 +59,14 @@
           $(this).unbind('inview');
         }
       });
-      var customRow = $('.row');
-      var colNum = $("#counter .row > div").length;
-      var col = $(".colNum");
+
 
       //changing column class depending of number of elements added
       //in this case, 12 is max number of elements available in one row
       function colNumChange() {
+        let customRow = $('.row');
+        let colNum = $("#counter .row > div").length;
+        let col = $(".colNum");
         if (colNum === 1) {
           col.addClass("col-sm-12 col-md-12 col-lg-12");
         }
